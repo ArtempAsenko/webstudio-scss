@@ -1,4 +1,4 @@
-.main-title{
+.hero__main-title{
     color: #FFFFFF ;
     font-size: 44px ;
     font-weight: 900;
@@ -7,7 +7,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.section1{
+.hero{
     background: rgba(47, 48, 58, 0.40);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -17,7 +17,7 @@
     background-position: center;  
     
 }
-.btn-open{
+.hero__btn-open{
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
@@ -35,12 +35,12 @@
        background-color: $hover-color;
     }
 }
-.backdrop.is-hidden{
+.hero__backdrop.is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
-.backdrop{
+.hero__backdrop{
     position: fixed;
     left: 0px;
     top: 0px;
@@ -51,7 +51,7 @@
      opacity 250ms $timing-function 250ms,
      visibility 250ms $timing-function 250ms;
 } 
-.text-checkbox{
+.hero__text-checkbox{
     color: #757575;
 font-family: "Roboto";
 font-size: 14px;
@@ -60,7 +60,7 @@ line-height: 24px;
 letter-spacing: 0.42px;
 padding-left: 7px;
 }
-.policy-link{
+.hero__policy-link{
     color: #2196F3;
 font-family: "Roboto";
 font-size: 14px;
@@ -69,7 +69,7 @@ line-height: 24px;
 letter-spacing: 0.42px;
 text-decoration-line: underline;
 }
-.modal{
+.hero__modal{
     position: absolute; 
     top: 50%;
     left: 50%;
@@ -81,41 +81,41 @@ text-decoration-line: underline;
     border-radius: 4px;
     transition: opacity 250ms $timing-function 250ms;
 }
-.modal-form-icom{
+.hero__modal-form-icom{
     position: absolute;
     top: 27px;
     left: 12px;
 }
-.modal-form-label{
+.hero__modal-form-label{
     color: #757575;
     font-family: "Roboto";
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.12px;
 }
-.modal-form-policy{
+.hero__modal-form-policy{
     display: flex;
 }
-.modal-form-field{
+.hero__modal-form-field{
     position: relative;
     margin-top: 10px;
 }
-.modal-form-label{
+.hero__modal-form-label{
     margin-right: 1002px;
     }
-    .modal-form-input{
+    .hero__modal-form-input{
         width: 448px;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
         height: 40px;
         background-color: #FFF;
     }
-    .modal-form{
+    .hero__modal-form{
         width: 448px;
         margin-left: 40px;
         margin-right: 40px;
     }
-    .modal-form-title{
+    .hero__modal-form-title{
         padding-top: 8px;
         color: #212121;
         text-align: center;
@@ -124,13 +124,13 @@ text-decoration-line: underline;
         font-weight: 700;
         letter-spacing: 0.6px;
     }
-    .modal-form-label{
+    .hero__modal-form-label{
     margin-right: 1002px;
     }
-    .first-label{
+    .hero__first-label{
         padding-top: 12px;
     }
-    .btn-close{
+    .hero__btn-close{
         margin-left: 490px;
         margin-right: 8px;
         width: 30px;
@@ -144,17 +144,17 @@ text-decoration-line: underline;
         padding-top: 14px;
         margin-top: 8px;
     }
-    .icon-back{
+    .hero__icon-back{
         fill: #000000;
         &:hover,
         &:focus{
             fill: $hover-color;
         }
     } 
-    .mail{
+    .hero__mail{
         margin-right: 50px;
     }
-    .coment-title{
+    .hero__coment-title{
         margin-right: 967px;
         padding-top: 10px;
         color: #757575;
@@ -164,16 +164,16 @@ text-decoration-line: underline;
         letter-spacing: 0.12px;
         font-family: "Roboto";
     }   
-    .coment{
+    .hero__coment{
         min-width: 448px;
         resize: none;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
     }   
-    .agree-div{
+    .hero__agree-div{
         padding-bottom: 40px;
     }
-    .agree-btn{
+    .hero__agree-btn{
         width: 200px;
         height: 50px;
         border-radius: 4px;

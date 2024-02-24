@@ -1,8 +1,8 @@
-.section2{
+.benefits{
     padding-top: 94px;
     padding-bottom: 94px;
     }
-    .card-item{
+    .benefits__card-item{
         width: 270px;
        &::before{
         content: '';
@@ -18,28 +18,33 @@
         padding-bottom: 55px;
        }
     }
-    .card-item:nth-child(2){
+    .benefits__card-item:nth-child(2){
         &::before{
         background-image: url(/clock\ 1.svg);
         }
     }
-    .card-item:nth-child(3){
+    .benefits__card-item:nth-child(3){
         &::before{
         background-image: url(/diagram\ 1.svg);
         }
     }
-    .card-item:nth-child(4){
+    .benefits__card-item:nth-child(4){
         &::before{
         background-image: url(/astronaut\ 1.svg);
         }
     }
-    .card-title{
+    .benefits__card-title{
         font-size: 14px ;
         font-weight: 700 ;
         margin-bottom: 10px;
     
     }
-    .card-text{
+    .benefits__card-text{
         font-size: 14px;
         font-weight: 400;
+        color: $navigation-color-link;
     }
+    .benefits__card-list{
+        display: flex;
+        justify-content: space-between;
+     }
