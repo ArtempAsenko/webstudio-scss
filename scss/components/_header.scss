@@ -1,0 +1,82 @@
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-wrap{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: $hover-color;
+    margin-right: 93px;
+}
+.logo{
+    margin-bottom:20px; 
+}
+.black{
+    color: #000;
+}
+.header-nav{
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-list{
+    display: flex;
+    width: 281px;
+    justify-content: space-between;
+}
+.header-link{
+    position: relative;
+}
+.header-link{
+    color: $navigation-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus
+    {   color:$hover-color;
+        animation-name: chageColor;
+        animation-duration: 250ms;
+        animation-timing-function: $timing-function;}
+        @keyframes chageColor{
+            0%{
+                color :$navigation-color;
+            }
+            100%{
+                color :$hover-color;
+            }
+        }
+}
+.contacts{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+}
+.icon-header{
+    margin-right: 10px;
+    fill: grey;
+}
+.contacts-link{
+    color: $navigation-color-link;
+    display: flex;
+    align-items: center;
+    transition-property: color , fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus{
+        color: $hover-color;
+    }
+    }
