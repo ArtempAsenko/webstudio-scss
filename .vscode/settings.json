@@ -1,10 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "liveServer.settings.port": 5501
-=======
-=======
->>>>>>> bfff87d3a76a22c344ca11848a7cc7d55efdced3
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
@@ -26,8 +20,4 @@
         "> 1%",
         "last 2 versions"
     ]
-<<<<<<< HEAD
->>>>>>> bfff87d3a76a22c344ca11848a7cc7d55efdced3
-=======
->>>>>>> bfff87d3a76a22c344ca11848a7cc7d55efdced3
 }
