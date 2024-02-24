@@ -26,6 +26,22 @@ h1, h2, h3, p {
   margin-top: 0;
 }
 
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -374,4 +390,87 @@ h1, h2, h3, p {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+}
+
+.section2 {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-item {
+  width: 270px;
+}
+.card-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-image: url(/antenna\ 1.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 55px;
+}
+
+.card-item:nth-child(2)::before {
+  background-image: url(/clock\ 1.svg);
+}
+
+.card-item:nth-child(3)::before {
+  background-image: url(/diagram\ 1.svg);
+}
+
+.card-item:nth-child(4)::before {
+  background-image: url(/astronaut\ 1.svg);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section3 {
+  padding-bottom: 94px;
+  background: #FFF;
+}
+
+.item-work {
+  position: relative;
+}
+
+.card-img-work {
+  width: 370px;
+  height: 294px;
+}
+
+.card-title-work {
+  position: absolute;
+  bottom: 3px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
 }/*# sourceMappingURL=main.css.map */

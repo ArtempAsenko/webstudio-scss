@@ -347,7 +347,7 @@ footer>a{
     justify-content: center;
     height: 70px;
     width: 100%;
-    background-color: rgba(47, 48, 58, 0.80);;
+    background-color: rgba(47, 48, 58, 0.80);
 }
 
 .card-item:nth-child(2)::before{
