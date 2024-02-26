@@ -169,7 +169,7 @@ h1, h2, h3, p {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(/img/1/img\(back\).webp);
+  background-image: url(/img/1/back.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -391,7 +391,7 @@ h1, h2, h3, p {
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
-  background-image: url(/antenna\ 1.svg);
+  background-image: url(../antenna.svg);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
@@ -399,15 +399,15 @@ h1, h2, h3, p {
 }
 
 .benefits__card-item:nth-child(2)::before {
-  background-image: url(/clock\ 1.svg);
+  background-image: url(../clock.svg);
 }
 
 .benefits__card-item:nth-child(3)::before {
-  background-image: url(/diagram\ 1.svg);
+  background-image: url(../diagram.svg);
 }
 
 .benefits__card-item:nth-child(4)::before {
-  background-image: url(/astronaut\ 1.svg);
+  background-image: url(../astronaut.svg);
 }
 
 .benefits__card-title {
