@@ -169,7 +169,7 @@ h1, h2, h3, p {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(/img/1/back.webp);
+  background-image: url(../img/1/back.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
