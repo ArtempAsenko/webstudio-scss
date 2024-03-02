@@ -45,6 +45,5 @@
         color: $navigation-color-link;
     }
     .benefits__card-list{
-        display: flex;
-        justify-content: space-between;
+        @include flex();
      }

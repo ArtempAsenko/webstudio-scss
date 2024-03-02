@@ -26,6 +26,15 @@ h1, h2, h3, p {
   margin-top: 0;
 }
 
+.client__customer, .team__title, .activity__title {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -74,10 +83,10 @@ h1, h2, h3, p {
 }
 
 .header__list {
+  width: 281px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 281px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -470,10 +479,7 @@ h1, h2, h3, p {
 }
 
 .activity__title {
-  font-size: 36px;
-  font-weight: 700;
   margin-bottom: 50px;
-  text-align: center;
 }
 
 .activity__card-list {
@@ -562,10 +568,7 @@ h1, h2, h3, p {
 }
 
 .team__title {
-  font-size: 36px;
-  font-weight: 700;
   margin-bottom: 50px;
-  text-align: center;
 }
 
 .team__card-list {
@@ -575,15 +578,6 @@ h1, h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.client__customer {
-  color: #212121;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
 }
 
 .client__company {

@@ -4,8 +4,7 @@
     
 }
 .header__wrap{
-    display: flex;
-    justify-content: space-between;
+    @include flex();
     align-items: center;
 }
 .header__logo-wrap{
@@ -32,9 +31,8 @@
     font-weight: 500;
 }
 .header__list{
-    display: flex;
     width: 281px;
-    justify-content: space-between;
+    @include flex();
 }
 .header__link{
     position: relative;
