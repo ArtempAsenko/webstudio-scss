@@ -4,7 +4,7 @@
   padding: 0 15px;
 }
 
-@media screen and (mim-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -186,6 +186,7 @@ h1, h2, h3, p {
   background-image: url(../img/1/back.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1200px) {
@@ -231,6 +232,139 @@ h1, h2, h3, p {
   background-color: #2196F3;
 }
 
+.hero__backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hero__backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.hero__text-checkbox {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  padding-left: 7px;
+}
+
+.hero__policy-link {
+  color: #2196F3;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+}
+
+.hero__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 528px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  height: 581px;
+  border-radius: 4px;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.hero__modal-form-icom {
+  position: absolute;
+  top: 27px;
+  left: 12px;
+}
+
+.hero__modal-form-label {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.hero__modal-form-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__modal-form-field {
+  position: relative;
+  margin-top: 10px;
+}
+
+.hero__modal-form-label {
+  margin-right: 1002px;
+}
+
+.hero__modal-form-input {
+  width: 448px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  background-color: #FFF;
+}
+
+.hero__modal-form {
+  width: 448px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.hero__modal-form-title {
+  padding-top: 8px;
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.hero__modal-form-label {
+  margin-right: 1002px;
+}
+
+.hero__first-label {
+  padding-top: 12px;
+}
+
+.hero__btn-close {
+  margin-left: 490px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 14px;
+  margin-top: 8px;
+}
+
 .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -263,10 +397,65 @@ h1, h2, h3, p {
             justify-content: space-between;
   }
 }
+.benefits__card-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefits__card-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-image: url(../antenna.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 55px;
+}
+
+.benefits__card-item:nth-child(2)::before {
+  background-image: url(../clock.svg);
+}
+
+.benefits__card-item:nth-child(3)::before {
+  background-image: url(../diagram.svg);
+}
+
+.benefits__card-item:nth-child(4)::before {
+  background-image: url(../astronaut.svg);
+}
+
+.benefits__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.benefits__card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.activity {
+  display: none;
+}
+
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
+}
+
+.team__card-img {
+  vertical-align: baseline;
+  width: 450px;
+  height: 460px;
+  margin-bottom: 30px;
 }
 
 .team__card-item {
@@ -274,13 +463,6 @@ h1, h2, h3, p {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #FFF;
-}
-
-.team__card-img {
-  vertical-align: baseline;
-  width: 270px;
-  height: 260px;
-  margin-bottom: 30px;
 }
 
 .team__card-title {
@@ -292,7 +474,7 @@ h1, h2, h3, p {
 .team__card-text {
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team__social-list {
@@ -302,10 +484,10 @@ h1, h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 32px;
+  margin-right: 122px;
+  margin-left: 122px;
   margin-top: 16px;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__social-link {
@@ -340,16 +522,13 @@ h1, h2, h3, p {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.team__card-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 450px;
 }
 
 .client__company {
@@ -359,6 +538,8 @@ h1, h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .client__company-icon {
@@ -366,8 +547,8 @@ h1, h2, h3, p {
   height: 60px;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 52px;
+  padding-right: 52px;
   fill: #AFB1B8;
 }
 .client__company-icon:hover, .client__company-icon:focus {
@@ -375,8 +556,8 @@ h1, h2, h3, p {
 }
 
 .client__company-item {
-  margin-top: 50px;
-  margin-bottom: 94px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: 30px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
@@ -392,15 +573,6 @@ h1, h2, h3, p {
 .client__company-item:hover {
   border-radius: 4px;
   border: 1px solid #2196F3;
-}
-
-.client__card-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer {
@@ -430,7 +602,7 @@ h1, h2, h3, p {
   font-size: 26px;
   font-weight: 700;
   color: #2196F3;
-  margin-right: 93px;
+  margin-left: 163px;
 }
 
 .footer__logo {
@@ -443,10 +615,16 @@ h1, h2, h3, p {
 
 .footer__link2 {
   color: #FFFFFF;
+  padding-left: 124px;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
 .footer__link3 {
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 124px;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
 .footer__title {
@@ -456,14 +634,15 @@ h1, h2, h3, p {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  padding-left: 70px;
+  padding-right: 167px;
+  margin-top: 247px;
 }
 
 .footer__list-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 70px;
+  margin-right: 137px;
   padding-top: 20px;
   gap: 10px;
 }
@@ -497,75 +676,6 @@ h1, h2, h3, p {
   fill: #FFFFFF;
   width: 20px;
   height: 20px;
-}
-
-.footer__form {
-  padding-left: 93px;
-}
-
-.footer__form-title {
-  color: #FFF;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-
-.footer__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
-  top: 2740px;
-  left: 950px;
-}
-
-.footer__input {
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(33, 150, 243, 0);
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 12px;
-}
-
-.footer__btn {
-  width: 200px;
-  height: 50px;
-  background-color: #2196F3;
-  border-radius: 4px;
-  border-color: #2196F3;
-  color: #FFF;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  cursor: pointer;
-}
-
-.footer__form-icon {
-  fill: #FFFFFF;
-}
-
-.footer__link2 {
-  margin-bottom: 9px;
-}
-
-.footer__link3 {
-  margin-bottom: 9px;
 }
 
 .portfolio {
@@ -635,12 +745,12 @@ h1, h2, h3, p {
   width: 100%;
   padding: 63px 24px;
   opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 .portfolio__product-action:hover, .portfolio__product-action:focus {
   width: 100%;
   opacity: 1;
-  -webkit-transform: translatey(100%);
-          transform: translatey(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -651,4 +761,23 @@ h1, h2, h3, p {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+.portfolio__card-item-photo:hover .portfolio__product-action {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.portfolio__over-text {
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
 }/*# sourceMappingURL=main.css.map */

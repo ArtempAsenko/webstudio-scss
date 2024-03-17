@@ -51,12 +51,13 @@
         width: 100%;
         padding: 63px 24px;
         opacity: 0;
+        transform: translateY(100%);
         &:hover,
         &:focus{
         width: 100%;
         
         opacity: 1;
-        transform: translatey(100%);
+
         transition: transform 250ms ease-in-out;
         }
  }
@@ -65,8 +66,18 @@
     font-weight: 700 ;
     margin-bottom: 10px;
  }
- .portfolio__card-div{
-
+ .portfolio__card-item-photo:hover .portfolio__product-action{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 250ms ease-in-out;
+ }
+ .portfolio__over-text{
+    color: #FFF;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.54px;
  }
 // .portfolio{
 //     padding-top: 94px;

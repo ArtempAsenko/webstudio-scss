@@ -9,26 +9,34 @@
  .footer__links{
     display: flex;
     flex-direction: column;
+  
 }
 .footer__logo{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
     color: $hover-color;
-    margin-right: 93px;
+    margin-left: 163px;
 }
 .footer__logo{
     margin-bottom:20px; 
+   
 }
 .footer__white{
     color: #FFF;
 }
 .footer__link2{
     color: #FFFFFF;
+    padding-left: 124px;
+    text-align: center;
+    padding-bottom: 8px;
 }
 
 .footer__link3{
     color: rgb(255, 255, 255 ,0.6);
+    padding-left: 124px;
+    text-align: center;
+    padding-bottom: 8px;
 }
 .footer__title{
     color: #FFF;
@@ -37,11 +45,14 @@
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    padding-left: 70px;
+    
+    padding-right: 167px;
+    margin-top:  247px; 
+  
 }
 .footer__list-icon{
     display: flex;
-    padding-left: 70px;
+    margin-right: 137px;
     padding-top: 20px;
     gap: 10px;
 }
@@ -66,62 +77,62 @@
      width: 20px;
      height: 20px;
  }
- .footer__form{
-    padding-left: 93px;
+//  .footer__form{
+//     padding-left: 93px;
     
-}
-.footer__form-title{
-    color: #FFF;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 700; 
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-.footer__mail{
-    display: flex;
-    position: absolute;
-    color: rgba(255, 255, 255, 0.60);
-    font-family: "Roboto";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
-    letter-spacing: 0.48px;
-    top:2740px ;
-    left: 950px;
-}
-.footer__input{
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background-color: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right:  12px;
-}
-.footer__btn{
-    width: 200px;
-    height: 50px;
-    background-color: $hover-color;
-    border-radius: 4px;
-    border-color: $hover-color;
-    color: #FFF;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px; 
-    letter-spacing: 0.96px;
-    cursor: pointer;
-}
-.footer__form-icon{
-    fill: $hover-text-color;
-}
-.footer__link2{
-    margin-bottom: 9px;
-}
-.footer__link3{
-    margin-bottom: 9px;
-}
+// }
+// .footer__form-title{
+//     color: #FFF;
+//     font-family: "Roboto";
+//     font-size: 14px;
+//     font-weight: 700; 
+//     letter-spacing: 0.42px;
+//     text-transform: uppercase;
+//     padding-bottom: 20px;
+// }
+// .footer__mail{
+//     display: flex;
+//     position: absolute;
+//     color: rgba(255, 255, 255, 0.60);
+//     font-family: "Roboto";
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 20px; 
+//     letter-spacing: 0.48px;
+//     top:2740px ;
+//     left: 950px;
+// }
+// .footer__input{
+//     width: 358px;
+//     height: 50px;
+//     border-radius: 4px;
+//     border: 1px solid rgba(255, 255, 255, 0.30);
+//     background-color: rgba(33, 150, 243, 0.00);
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+//     margin-right:  12px;
+// }
+// .footer__btn{
+//     width: 200px;
+//     height: 50px;
+//     background-color: $hover-color;
+//     border-radius: 4px;
+//     border-color: $hover-color;
+//     color: #FFF;
+//     text-align: center;
+//     font-family: "Roboto";
+//     font-size: 16px;
+//     font-weight: 700;
+//     line-height: 30px; 
+//     letter-spacing: 0.96px;
+//     cursor: pointer;
+// }
+// .footer__form-icon{
+//     fill: $hover-text-color;
+// }
+// .footer__link2{
+//     margin-bottom: 9px;
+// }
+// .footer__link3{
+//     margin-bottom: 9px;
+// }

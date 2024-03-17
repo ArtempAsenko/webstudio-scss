@@ -1,18 +1,27 @@
+
+.client{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 450px;
+}
+
 .client__customer{
     @extend %section-title;  
 }
 .client__company{
     display: flex;
     justify-content: space-between;  
-    
+    flex-wrap: wrap;
 }
+    
+
 .client__company-icon{
     width: 106px;
     height: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 52px;
+    padding-right: 52px;
     fill: $icon-color;
     &:hover,
     &:focus{
@@ -21,8 +30,8 @@
 }
 
 .client__company-item{
-    margin-top: 50px;
-    margin-bottom: 94px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 30px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -37,7 +46,7 @@
     }
 }
 
-.client__card-list{
-    display: flex;
-    justify-content: space-between;
- }
+// .client__card-list{
+//     display: flex;
+//     justify-content: space-between;
+//  }
