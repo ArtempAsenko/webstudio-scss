@@ -15,6 +15,13 @@
     .benefits__card-item{
         width: 354px;
     }
+    .benefits__card-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .benefits__card-title{
+     
+    }
 }
 @media screen and (min-width: 1200px) {
     .benefits__card-item{
@@ -26,7 +33,7 @@
     }
     .benefits__card-item{
                 
-                align-items: center;
+                align-items:center;
                &::before{
                 content: '';
                 display: block;
@@ -66,6 +73,7 @@
                                 font-weight: 700 ;
                                 margin-bottom: 10px;
                             text-align: center;
+                            width: 270px;
                             }
 
 // .benefits{

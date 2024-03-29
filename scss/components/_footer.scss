@@ -3,9 +3,12 @@
     padding-top: 60px ;
     padding-bottom: 60px;
 }
-.footer__list{
-    display: flex;
- }
+@media screen and (min-width: 768px){
+    
+}
+// .footer__list{
+//     display: flex;
+//  }
  .footer__links{
     display: flex;
     flex-direction: column;
@@ -16,7 +19,8 @@
     font-size: 26px;
     font-weight: 700;
     color: $hover-color;
-    margin-left: 163px;
+   display: flex;
+   justify-content: center;
 }
 .footer__logo{
     margin-bottom:20px; 
@@ -27,14 +31,14 @@
 }
 .footer__link2{
     color: #FFFFFF;
-    padding-left: 124px;
+    
     text-align: center;
     padding-bottom: 8px;
 }
 
 .footer__link3{
     color: rgb(255, 255, 255 ,0.6);
-    padding-left: 124px;
+   
     text-align: center;
     padding-bottom: 8px;
 }
@@ -46,13 +50,11 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     
-    padding-right: 167px;
-    margin-top:  247px; 
+    margin-top: 60px;
   
 }
 .footer__list-icon{
     display: flex;
-    margin-right: 137px;
     padding-top: 20px;
     gap: 10px;
 }
@@ -71,6 +73,12 @@
     &:focus{
         background-color: $hover-color;
     }
+    
+}
+.footer__icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer__icon{
     fill: #FFFFFF;
@@ -78,9 +86,11 @@
      height: 20px;
  }
  .footer__form{
- position: absolute;
- 
-    
+ margin-top: 60px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
 }
 .footer__form-title{
     color: #FFF;
@@ -93,7 +103,6 @@
 }
 .footer__mail{
     display: flex;
-    position: absolute;
     color: rgba(255, 255, 255, 0.60);
     font-family: "Roboto";
     font-size: 16px;
@@ -103,13 +112,16 @@
     letter-spacing: 0.48px;
   
 }
-.footer__input{
-   
+.footer__input {
+    min-width: 290px;
+    max-width: 450px;
+   height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background-color: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-right:  12px;
+    margin-top: 20px;
 }
 .footer__btn{
     width: 200px;
@@ -125,6 +137,7 @@
     line-height: 30px; 
     letter-spacing: 0.96px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .footer__form-icon{
     fill: $hover-text-color;

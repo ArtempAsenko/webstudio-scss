@@ -9,7 +9,17 @@
     height: 460px;
     margin-bottom: 30px;
  }
-
+ @media screen and (min-width: 768px){
+    .team__card-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team__card-item{
+        width: 354px;
+        padding-left: 30px;
+       
+    }
+ }
 
 // .team{
 //     padding-top: 94px;
