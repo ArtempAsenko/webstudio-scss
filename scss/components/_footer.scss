@@ -6,6 +6,13 @@
 @media screen and (min-width: 768px){
     
 }
+@media screen and (min-width: 1200px){
+    .footer__icon-div{
+        display: flex;
+        flex-direction:row;
+    }
+
+}
 // .footer__list{
 //     display: flex;
 //  }

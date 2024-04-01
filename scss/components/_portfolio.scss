@@ -2,6 +2,39 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+@media screen and (min-width: 768px){
+   .portfolio__card-button{
+      padding:6px 25px;
+   }
+   .portfolio__card-list-button{
+      margin-bottom: 30px;
+   }
+   .portfolio__card-item-photo{
+      max-width: 354px;
+      padding-bottom: 30px;
+    
+   }
+   .portfolio__card-list-photo{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .portfolio__card-title{
+      margin-top: 20px;
+      margin-bottom: 4px;
+      font-size: 18px;
+   }
+}
+@media screen and (min-width: 1200px){
+   .portfolio{
+      padding-top: 94px;
+      padding-bottom: 94px;
+   }
+   .portfolio__card-list-button{
+      display: flex;
+      justify-content: center;
+   }
+}
 .portfolio__card-button{
     background: #F5F4FA;
     color: #212121;
