@@ -41,6 +41,11 @@ h1, h2, h3, p {
   margin-top: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .client__customer, .team__title {
   color: #212121;
   text-align: center;
@@ -653,23 +658,12 @@ h1, h2, h3, p {
   border: 1px solid #2196F3;
 }
 
-.footer {
+footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__icon-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,8 +807,7 @@ h1, h2, h3, p {
 }
 
 .footer__input {
-  min-width: 290px;
-  max-width: 450px;
+  width: 290px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -854,6 +847,73 @@ h1, h2, h3, p {
   margin-bottom: 9px;
 }
 
+.footer__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__title {
+    margin-top: 0;
+  }
+  .footer__input {
+    height: 50px;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__icon-div {
+    margin-left: 70px;
+  }
+  .footer__form {
+    margin-top: 0;
+  }
+  .footer__form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__input {
+    width: 358px;
+  }
+  .footer__btn {
+    margin-top: 0;
+  }
+}
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
