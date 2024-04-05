@@ -5,20 +5,23 @@
     }
      .team__card-img{
     vertical-align:baseline;
-    width : 450px;
-    height: 460px;
     margin-bottom: 30px;
+    max-width: 100%;
  }
  @media screen and (min-width: 768px){
     .team__card-list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
     }
     .team__card-item{
         width: 354px;
         padding-left: 30px;
        
     }
+    
+    
  }
  @media screen and (min-width: 1200px){
     .team{
@@ -39,12 +42,12 @@
     }
      .team__card-img{
     vertical-align:baseline;
-    width : 270px;
     height: 260px;
     margin-bottom: 30px;
  }
  .team__card-item{
     padding-left: 0;
+    width: 270px;
  }
  .team__card-text{
        
@@ -78,11 +81,12 @@
 
 .team__social-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 122px;
     margin-left: 122px;
     margin-top: 16px;
     padding-bottom: 24px;
+    gap: 8px;
 }
 .team__social-link{
     fill: $icon-color;
@@ -109,7 +113,7 @@
 .team__title{
     @extend %section-title;  
     // margin-bottom: 50px;
-    margin-bottom: 30px;
+   
 }
 // .team__card-list{
 //     @include flex();

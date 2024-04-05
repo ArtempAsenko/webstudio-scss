@@ -11,6 +11,9 @@
         width: 450px;
         align-items: center;
     }
+    .benefits__card-title{
+        text-align: center;
+    }
 }
 @media screen and (min-width: 768px) {
     .benefits__card-item{
@@ -19,6 +22,9 @@
     .benefits__card-list{
         display: flex;
         flex-wrap: wrap;
+    }
+    .benefits__card-title{
+        text-align: left;
     }
    
 }
@@ -46,7 +52,7 @@
                 background-size: 70px;
                 background-repeat: no-repeat;
                 background-position: center;
-                padding-bottom: 55px;
+                margin-bottom: 30px;
                }
             }
             .benefits__card-item:nth-child(2){
@@ -73,8 +79,8 @@
                                 font-size: 14px ;
                                 font-weight: 700 ;
                                 margin-bottom: 10px;
-                            text-align: center;
-                            width: 270px;
+                            
+                           
                             }
 
 // .benefits{

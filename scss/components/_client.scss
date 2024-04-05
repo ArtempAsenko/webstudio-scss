@@ -4,14 +4,11 @@
     padding-bottom: 60px;
    
 }
+
 @media screen and (min-width: 768px){
-    .client__customer{
-        padding-left: 227px
-    }
 }
 .client__customer{
     @extend %section-title; 
-    width: 314px; 
 }
 .client__company{
     display: flex;
@@ -33,10 +30,10 @@ flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
  }
- .client__company-icon{
-    padding: 16px 32px;
- }
-
+}
+.client__company{
+    display: flex;
+    justify-content: space-between;
 }
 
 .client__company-icon{
@@ -64,5 +61,9 @@ flex-wrap: nowrap;
         border: 1px solid #2196F3;
     }
    margin-right: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+
 
