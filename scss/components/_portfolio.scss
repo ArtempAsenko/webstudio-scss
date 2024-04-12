@@ -63,7 +63,7 @@
    .portfolio__card-item-photo{
       max-width: 370px;
       min-width: 370px;
-      margin-bottom: 32px;
+     
    }
 }
 .portfolio__card-button{
@@ -171,6 +171,7 @@
 //     justify-content: space-between;
 //  }
  .portfolio__card-item-photo{
+   margin-bottom: 30px;
     border: 1px solid #EEE;
     &:hover,
     &:focus{
@@ -199,9 +200,10 @@
 //     line-height: 28px;
 //     letter-spacing: 0.54px;
 // }
-// .portfolio__card-div{
-//     padding: 30px;
-//   }
+.portfolio__card-div{
+    padding-top: 20px;
+    padding-left: 24px;
+  }
 //   .portfolio__card-title{
 //     font-size: 14px ;
 //     font-weight: 700 ;

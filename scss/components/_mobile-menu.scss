@@ -1,4 +1,4 @@
-menu-container {
+.menu-container {
 position: fixed;
 top: 0;
 right: 0;
@@ -13,6 +13,14 @@ z-index: 999;
 transform: translateX(100%);
 transition-duration: 250ms;
 transition-timing-function: $timing-function;
+}
+@media screen and (min-width: 768px){
+    .menu-container{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
 }
 .menu-container.is-open{
     transform: translateX(0%);
@@ -31,6 +39,9 @@ border: none;
     cursor: pointer;
     border: none;
     margin-left: auto;
+    fill:  #000000;
+
+
 }
 .menu-button__close{
     position: absolute;
@@ -43,7 +54,6 @@ border: none;
 }
 .menu-button__open,
 .menu-button__close{
-    fill: gray;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
 }
@@ -79,4 +89,78 @@ border: none;
     .mobile-menu{
         display: none;
     }
+}
+.mobile-socials__list{
+    display: flex;
+    justify-content: space-between;
+    gap:20px ;
+}
+.mobile-socials__link{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $navigation-color-link;
+
+    &:hover,
+    &:focus{
+        color: $hover-color;
+    }
+}
+.mobile-contacts__item{
+    padding-bottom: 32px;
+}
+.mobile-contacts{
+    padding-bottom: 64px;
+}
+.mobile-contacts__tel{
+    font-family: 'Roboto';
+font-size: 34px;
+font-weight: 500;
+line-height: 39.84px;
+letter-spacing: 0.02em;
+text-align: left;
+color: $navigation-color-link;
+     &:hover,
+     &:focus{
+        color: $hover-color;
+    }
+
+}
+.mobile-contacts__mail{
+    font-family: 'Roboto';
+font-size: 24px;
+font-weight: 500;
+line-height: 28.13px;
+letter-spacing: 0.02em;
+text-align: left;
+color: $navigation-color-link;
+     &:hover,
+     &:focus{
+        color: $hover-color;
+    }
+
+}
+.mobile-nav__item{
+    padding-bottom: 32px;
+    font-family: 'Roboto';
+    font-size: 40px;
+font-weight: 500;
+line-height: 46.88px;
+letter-spacing: 0.02em;
+text-align: left;
+
+
+
+
+}
+.mobile-nav__link{
+    color: $navigation-color;
+    &:hover,
+     &:focus{
+        color: $hover-color;
+    }
+
 }

@@ -72,6 +72,21 @@ h1, h2, h3, p {
     display: -ms-flexbox;
     display: flex;
   }
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .header__wrap {
   display: -webkit-box;
@@ -196,7 +211,7 @@ h1, h2, h3, p {
   color: #2196F3;
 }
 
-menu-container {
+.menu-container {
   position: fixed;
   top: 0;
   right: 0;
@@ -219,6 +234,14 @@ menu-container {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+}
 .menu-container.is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -239,6 +262,7 @@ menu-container {
   cursor: pointer;
   border: none;
   margin-left: auto;
+  fill: #000000;
 }
 
 .menu-button__close {
@@ -253,7 +277,6 @@ menu-container {
 
 .menu-button__open,
 .menu-button__close {
-  fill: gray;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -301,6 +324,80 @@ menu-container {
     display: none;
   }
 }
+.mobile-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.mobile-socials__link {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+}
+.mobile-socials__link:hover, .mobile-socials__link:focus {
+  color: #2196F3;
+}
+
+.mobile-contacts__item {
+  padding-bottom: 32px;
+}
+
+.mobile-contacts {
+  padding-bottom: 64px;
+}
+
+.mobile-contacts__tel {
+  font-family: "Roboto";
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 39.84px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+}
+.mobile-contacts__tel:hover, .mobile-contacts__tel:focus {
+  color: #2196F3;
+}
+
+.mobile-contacts__mail {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+}
+.mobile-contacts__mail:hover, .mobile-contacts__mail:focus {
+  color: #2196F3;
+}
+
+.mobile-nav__item {
+  padding-bottom: 32px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.88px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.mobile-nav__link {
+  color: #212121;
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: #2196F3;
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -518,6 +615,10 @@ menu-container {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
   }
   .benefits__card-title {
     text-align: left;
@@ -604,7 +705,7 @@ menu-container {
   }
   .team__card-item {
     width: 354px;
-    padding-left: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1134,7 +1235,6 @@ footer {
   .portfolio__card-item-photo {
     max-width: 370px;
     min-width: 370px;
-    margin-bottom: 32px;
   }
 }
 .portfolio__card-button {
@@ -1215,11 +1315,17 @@ footer {
 }
 
 .portfolio__card-item-photo {
+  margin-bottom: 30px;
   border: 1px solid #EEE;
 }
 .portfolio__card-item-photo:hover, .portfolio__card-item-photo:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__card-div {
+  padding-top: 20px;
+  padding-left: 24px;
 }
 
 .portfolio__card-text {

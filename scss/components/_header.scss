@@ -12,7 +12,17 @@
     .header__nav{
         display: flex;
     }
+    .header__contacts{
+        flex-direction: column;
+        padding-top: 10px;
+    }
 }
+@media screen and (min-width: 1200px){
+    .header__contacts{
+        flex-direction: row;
+    }
+}
+
 .header__wrap{
     @include flex();
     align-items: center;
