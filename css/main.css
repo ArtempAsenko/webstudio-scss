@@ -679,6 +679,15 @@ h1, h2, h3, p {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .activity {
+    background-color: #fff;
+    padding-bottom: 94px;
+  }
+  .activity__item-work {
+    position: relative;
+  }
+}
 .team {
   padding-top: 60px;
   padding-bottom: 60px;

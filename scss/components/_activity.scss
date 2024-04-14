@@ -1,38 +1,42 @@
 .activity{
     display: none;
 }
-// .activity{
-//     padding-bottom: 94px;
-//     background: #FFF;
-// }
-// .activity__item-work{
-//     position: relative;
-// }
-// .activity__card-img-work{
-//     width: 370px;
-//     height: 294px;
-// }
-// .activity__card-title-work{
-//     position: absolute;
-//     bottom: 3px;
-//     color: $hover-text-color;
-//     text-align: center;
-//     font-family: "Roboto";
-//     font-size: 14px;  
-//     font-weight: 700;
-//     letter-spacing: 0.42px;
-//     text-transform: uppercase;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 70px;
-//     width: 100%;
-//     background-color: rgba(47, 48, 58, 0.80);
-// } 
-// .activity__title{
-//   @extend %section-title;  
-//   margin-bottom: 50px;
-// }
-// .activity__card-list{
-//    @include flex();
-//  }
+@media screen and (min-width: 1200px){
+    .activity{
+        background-color: #fff;
+        padding-bottom: 94px;
+        display:block;
+    }
+    .activity__item-work{
+    position: relative;
+   
+}
+.activity__card-img-work{
+        width: 370px;
+        height: 294px;
+    }
+    .activity__card-title-work{
+        position: absolute;
+        bottom: 3px;
+        color: $hover-text-color;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px;  
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        background-color: rgba(47, 48, 58, 0.80);
+    } 
+    .activity__title{
+      @extend %section-title;  
+      margin-bottom: 50px;
+    }
+    .activity__card-list{
+        @include flex();
+    }
+}
