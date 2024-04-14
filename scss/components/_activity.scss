@@ -1,5 +1,8 @@
-.activity{
-    display: none;
+
+@media screen and (min-width: 480px){
+    .activity{
+        display: none;
+    }
 }
 @media screen and (min-width: 1200px){
     .activity{
@@ -33,7 +36,12 @@
         background-color: rgba(47, 48, 58, 0.80);
     } 
     .activity__title{
-      @extend %section-title;  
+        color: #212121;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px; 
       margin-bottom: 50px;
     }
     .activity__card-list{
